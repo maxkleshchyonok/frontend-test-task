@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+# Run linting
+echo "Running ESLint..."
+pnpm run lint || exit 1
+
+# Check code formatting
+echo "Checking code formatting..."
+pnpm run format:check || exit 1
+
+echo "All checks passed! Proceeding with push..."
+
