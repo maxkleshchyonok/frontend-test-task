@@ -15,7 +15,7 @@
     --background: #ffffff;
     --background-muted: rgba(249, 251, 251, 1);
     --surface: #f8fafc; /* header / surface */
-    --card: #ffffff;
+    --card: rgba(249, 249, 251, 1);
     --foreground: #000000; /* primary text */
     --muted: #727272; /* secondary text */
     --border: #e6e9ee;

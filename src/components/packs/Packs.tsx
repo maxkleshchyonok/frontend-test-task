@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './packs.module.scss';
 import Button from '../button/Button';
 import CompareModal from './CompareModal';
@@ -9,6 +9,21 @@ import PackCard from '../pack-card/PackCard';
 
 const Packs = () => {
     const [openCompare, setOpenCompare] = React.useState(false);
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+            setOpenCompare(false);
+        }
+    };
+
+    useEffect(() => {
+        if (openCompare) {
+            window.addEventListener('keydown', handleKeyDown);
+        }
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [openCompare]);
 
     return (
         <>
