@@ -1,8 +1,18 @@
-// import { SignUpForm } from '@/components/sign-up/SignUpForm';
-// import React from 'react';
+import React from 'react';
+import { SignUpForm } from '@/components/forms/SignUpForm';
+import Header from '@/components/header/Header';
+import styles from './page.module.scss';
 
 const SignUp = () => {
-    // return <SignUpForm />;
+    return (
+        <>
+            <Header />
+
+            <div className={styles.container}>
+                <SignUpForm />
+            </div>
+        </>
+    );
 };
 
 export default SignUp;

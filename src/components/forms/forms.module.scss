@@ -1,0 +1,152 @@
+.form {
+    margin-top: 2rem;
+    width: 30%;
+    border: var(--border-width) solid var(--primary);
+    border-radius: 1.6rem;
+    padding: 2rem;
+}
+
+.top_logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    z-index: 10;
+}
+
+.top_logo {
+    width: 10rem;
+    background-color: var(--background);
+    height: 10rem;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_logo_title {
+    font-weight: 400;
+    font-size: 2.6rem;
+    margin-top: 0.2rem;
+    color: var(--text-primary);
+}
+
+.field {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label {
+    font-weight: var(--text-regular);
+    font-size: 1.5rem;
+}
+
+.input {
+    width: 100%;
+    padding: 1.5rem;
+    border: var(--border-width) solid var(--input-border);
+    border-radius: 1.2rem;
+}
+
+.input::placeholder {
+    font-weight: var(--text-regular);
+    font-size: 1.5rem;
+    color: var(--input-placeholder);
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 20rem;
+    border: none;
+    background: var(--primary);
+    color: var(--on-primary);
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.forgotWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+
+    p {
+        color: var(--muted-info);
+        font-weight: var(--text-medium);
+        font-size: 1.4rem;
+    }
+}
+
+.separator {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2.7rem 0;
+
+    div {
+        height: 0.1rem;
+        width: 100%;
+        border: none;
+        background-color: var(--input-placeholder);
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: var(--muted-info);
+    }
+}
+
+.button {
+    background: transparent;
+    color: var(--info);
+    cursor: pointer;
+    border: none;
+}
+
+.buttonsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.4rem;
+}
+
+.secondaryButton {
+    width: 100%;
+    border-radius: 20rem;
+    color: black;
+    font-weight: 600;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.routeChange {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+
+    p {
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: var(--muted-info);
+    }
+}
+
+.helperText {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}

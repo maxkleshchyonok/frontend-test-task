@@ -8,7 +8,9 @@ const Header: React.FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.links}>
-                <PearLogo />
+                <Link href={'/'}>
+                    <PearLogo />
+                </Link>
                 <Link href="/about" className={styles.link}>
                     About
                 </Link>
