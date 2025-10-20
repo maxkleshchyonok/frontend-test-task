@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    margin-top: 10rem;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-muted);
+}
+
+.title {
+    text-align: center;
+    font-weight: var(--text-bold);
+    font-size: 6.1rem;
+}
+
+.container_compare {
+    margin-top: 1rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1rem;
+}
+
+.compare_button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    color: var(--foreground);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.packsContainer {
+    width: 90%;
+    border-radius: 1.6rem;
+    border: 1px solid var(--primary);
+    display: flex;
+    margin-top: 3.7rem;
+}
+
+/* Add separator between pack cards: right border on every child except the last one */
+.packsContainer > * {
+    border-right: 1px solid var(--primary);
+}
+
+.packsContainer > *:last-child {
+    border-right: none;
+}

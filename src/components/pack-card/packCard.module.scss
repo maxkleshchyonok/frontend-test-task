@@ -1,0 +1,105 @@
+.container {
+    width: 100%;
+    padding: 3rem;
+}
+
+.card {
+    /* ensure full height and visual separation between cards */
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container_title {
+    font-size: 2.5rem;
+    font-weight: var(--text-medium);
+}
+
+.container_description {
+    width: 95%;
+    font-weight: var(--text-regular);
+    font-size: 1.5rem;
+    color: var(--muted-secondary);
+}
+
+.priceContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0;
+}
+
+.price {
+    border: none;
+    display: flex;
+    align-items: center;
+    column-gap: 0.1rem;
+}
+
+.priceAmount {
+    font-size: 3.1rem;
+    font-weight: var(--text-medium);
+}
+
+.price_description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+
+    h5 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        font-weight: var(--text-medium);
+        color: var(--muted-secondary);
+    }
+}
+
+.priceButton {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: var(--text-medium);
+}
+
+.talkToTeamButton {
+}
+
+/* Includes list styles - remove default browser list markers so only the SVG tick is visible */
+.includes {
+    margin-top: 1.6rem;
+}
+
+.includes_title {
+    font-family: var(--font-jetbrains), var(--font-inter), sans-serif;
+    font-size: 1.2rem;
+    color: var(--muted-secondary);
+}
+
+.includes_list {
+    list-style: none; /* remove default bullets/markers */
+    padding-left: 0; /* remove default left padding */
+    margin: 0;
+}
+
+.includes_list li {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem; /* space between svg and text */
+    margin: 0.4rem 0;
+}
+
+.includes_text {
+    display: inline-block;
+}
+
+.viewAllButton {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.4rem;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-weight: var(--text-medium);
+    font-size: 1.4rem;
+    color: var(--muted-secondary);
+}

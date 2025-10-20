@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Figtree, JetBrains_Mono } from 'next/font/google';
 import '../styles/globals.css';
 
 const inter = Inter({
@@ -8,11 +8,23 @@ const inter = Inter({
     display: 'swap',
 });
 
+const figtree = Figtree({
+    variable: '--font-figtree',
+    subsets: ['latin'],
+    display: 'swap',
+});
+
+const jetbrains = JetBrains_Mono({
+    variable: '--font-jetbrains',
+    subsets: ['latin'],
+    display: 'swap',
+});
+
 export const metadata: Metadata = {
-    title: 'Next.js Template',
-    description: 'A Next.js template with strict code quality standards',
+    title: 'Pear Ai',
+    description: 'The Open Source AI-Powered Code Editor',
     icons: {
-        icon: '/favicon.ico',
+        icon: '/favicon.png',
     },
 };
 
@@ -23,7 +35,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.variable}>{children}</body>
+            <body className={`${inter.variable} ${figtree.variable} ${jetbrains.variable}`}>{children}</body>
         </html>
     );
 }

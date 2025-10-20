@@ -1,0 +1,16 @@
+import React from 'react';
+
+const LowPriorityMarker = () => (
+    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="0.399902" width="20" height="20" rx="4" fill="#E7E8EC" />
+        <path
+            d="M8 14.3999L12 10.3999L8 6.3999"
+            stroke="#61646B"
+            strokeWidth="1.33333"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
+
+export default LowPriorityMarker;

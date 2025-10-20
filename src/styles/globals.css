@@ -1,14 +1,5 @@
-:root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
+@import './variables.css';
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
-}
 
 /* Set base font size to 10px for easier rem calculations */
 html {

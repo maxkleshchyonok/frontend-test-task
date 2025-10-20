@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    height: 7.6rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--surface);
+    color: var(--text);
+    padding: 0 var(--space-5);
+}
+
+.links {
+    display: flex;
+    column-gap: 1.6rem;
+}
+
+.link {
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.auth {
+    margin-left: auto;
+    display: flex;
+    column-gap: 1.6rem;
+}
+
+.auth_el {
+    display: flex;
+}
