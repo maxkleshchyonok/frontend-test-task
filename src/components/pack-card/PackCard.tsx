@@ -55,7 +55,7 @@ const PackCard = ({ id, title, description, price, buttonText, includes }: Props
             </div>
 
             <button className={styles.viewAllButton}>
-                <ArrowDown />
+                <ArrowDown className="" />
                 <h5>View all features</h5>
             </button>
         </div>
