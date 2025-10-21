@@ -1,0 +1,85 @@
+.container {
+    width: 100%;
+    height: 7.6rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--surface);
+    color: var(--text);
+    padding: 0 var(--space-5);
+    position: relative;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.auth {
+    display: flex;
+    column-gap: 1.6rem;
+}
+
+.auth_el {
+    display: flex;
+}
+
+.burger {
+    display: none; // Hide by default
+    cursor: pointer;
+    transition: transform 0.3s ease; // Smooth transition for rotation
+}
+
+.burger.open {
+    transform: rotate(90deg);
+}
+
+.popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--accent);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000; // Ensure it appears above other content
+    animation: slideDown 0.3s ease-in-out; // Add animation
+
+    &.hidden {
+        display: none;
+    }
+}
+
+.popupContent {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.popupLink {
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: var(--text);
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block; // Show burger menu on mobile
+    }
+
+    .auth {
+        display: none; // Hide auth section on mobile
+    }
+
+    .popup {
+        display: block; // Show popup when menu is open
+    }
+}

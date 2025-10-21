@@ -1,0 +1,46 @@
+.customButton {
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 20rem;
+    transition: background-color 0.3s;
+}
+
+.customButton:hover {
+    opacity: 0.8;
+}
+
+/* Variants */
+.primary {
+    background: var(--primary);
+    color: var(--on-primary);
+    border: none;
+}
+
+.secondary {
+    background: var(--secondary);
+    // color: var(--on-secondary);
+    border: 1px solid var(--border-color);
+}
+
+.ghost {
+    background: transparent;
+    color: var(--button-primary-color, #000);
+    border: none;
+}
+
+/* Sizes */
+.sm {
+    padding: 0.4rem 2rem;
+    font-size: 2rem;
+}
+
+.md {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.6rem;
+}
+
+.lg {
+    padding: 1.2rem 2.4rem;
+    font-size: 2rem;
+}
