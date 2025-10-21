@@ -50,3 +50,27 @@
 .packsContainer > *:last-child {
     border-right: none;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .packsContainer {
+        flex-direction: column;
+
+        > * {
+            border-right: none;
+            border-bottom: 1px solid var(--primary);
+        }
+
+        > *:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .title {
+        font-size: 4rem;
+        width: 100%;
+    }
+}

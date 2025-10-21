@@ -1,5 +1,6 @@
 import Contributing from '@/components/contributing/Contributing';
 import FeatureCard from '@/components/feature-card/FeatureCard';
+import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
 import Introduction from '@/components/introduction/Introduction';
 import Packs from '@/components/packs/Packs';
@@ -10,6 +11,7 @@ export default function Home() {
         <div>
             <Header />
             <Introduction />
+
             <div>
                 {pearAiFeatures.map(feature => (
                     <FeatureCard
@@ -24,6 +26,7 @@ export default function Home() {
 
             <Packs />
             <Contributing />
+            <Footer />
         </div>
     );
 }

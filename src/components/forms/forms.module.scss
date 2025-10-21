@@ -150,3 +150,25 @@
     font-size: 0.9rem;
     color: #666;
 }
+
+@media (max-width: 480px) {
+    .form {
+        width: 98%;
+    }
+
+    .top_logo_title {
+        font-size: 2rem; /* Further reduce for mobile */
+    }
+    .label {
+        font-size: 1.3rem; /* Further reduce for mobile */
+    }
+    .input {
+        padding: 0.8rem; /* Further reduce padding for mobile */
+    }
+    .submitBtn {
+        font-size: 1.4rem; /* Further reduce for mobile */
+    }
+    .secondaryButton {
+        font-size: 1.8rem; /* Further reduce for mobile */
+    }
+}

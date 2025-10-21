@@ -20,3 +20,26 @@
         width: 60%;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; // Stack items vertically
+        align-items: center;
+        padding: 1rem;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .container_image {
+        width: 98%;
+        object-fit: scale-down;
+        height: 30rem;
+    }
+
+    .container_description {
+        margin-top: 1rem;
+    }
+}

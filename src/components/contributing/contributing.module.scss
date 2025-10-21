@@ -28,3 +28,18 @@
 .innerButton {
     padding: 3rem;
 }
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 6rem;
+        padding: 1rem;
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+}
